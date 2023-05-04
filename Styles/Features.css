@@ -1,0 +1,50 @@
+.feature{
+    margin:2em 2em;
+}
+.feature .cards{
+    width: 100%;
+}
+
+.feature .cards  .card{
+    border: 1px solid rgb(156 163 175);;
+    border-radius: 4px;
+    padding: 10px 1em;
+    font-size: 1em;
+    cursor: pointer;
+    margin-bottom: 1em;
+}
+
+.feature .cards .card .title{
+    display: flex;
+    align-items: center;
+}
+.feature .cards .card .title h2{
+    margin-left: 1em;
+    text-transform: capitalize;
+    font-size: 1.2em;
+
+}
+
+.feature .cards .card .para{
+    padding: 1em 0;
+    text-align: justify;
+    color:  rgb(107 114 128);
+}
+
+@media only screen and (min-width:800px){
+    .feature .cards {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .feature .cards .card{
+        width: 23em;
+        margin-left: 1em;
+    }
+}
+
+@media only screen and (min-width:1200px){
+    .feature .cards .card{
+        width: 18em;
+        margin-left: 1.4em;
+    }
+}
